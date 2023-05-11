@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Yali 2.0 | 23</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!--[if lt IE 9 ]>
+<script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
+<![endif]-->
+</head>
+
+<body class="page">
+	<!-- Loader-->
+	
+	<!-- <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div> -->
+	<div id="page-preloader">
+		<center>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_F801jA.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player> -->
+		<lottie-player src="/assets/Comp 1.json"  background="transparent"  speed="1"  style="width: 20%;"  loop autoplay></lottie-player>
+	</center>
+
+
+	</div>
+	<!-- Loader end-->
+	<div class="l-theme animated-css" data-header="sticky" data-header-top="200" data-canvas="container">
+		<!-- ==========================-->
+		<!-- SEARCH MODAL-->
+		<!-- ==========================-->
+		<div class="header-search open-search">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 offset-sm-2 col-10 offset-1">
+						<div class="navbar-search">
+							<form class="search-global">
+								<input class="search-global__input" type="text" placeholder="Type to search" autocomplete="off" name="s" value="">
+								<button class="search-global__btn"><i class="icon stroke icon-Search"></i></button>
+								<div class="search-global__note">Begin typing your search above and press return to search.</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="search-close close" type="button"><i class="fa fa-times"></i></button>
+		</div>
+		<!-- ==========================-->
+		<!-- MOBILE MENU-->
+		<!-- ==========================-->
+		<div data-off-canvas="mobile-slidebar left overlay">
+			<ul class="navbar-nav">
+				<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="nav-link" href="about.html">About</a></li>
+                <!-- <li class="nav-item "><a class="nav-link" href="listing.html">Boats Listing</a></li> -->
+                 <!-- <li class="nav-item "><a class="nav-link" href="tours.html">Tours</a></li> -->
+                <!-- <li class="nav-item "><a class="nav-link" href="blog.html">News</a></li> -->
+				<li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+			</ul>
+		</div>
+		<header class="header header-slider">
+			<div class="top-bar">
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-auto">
+							<div class="top-bar__item"><i class="fas fa-phone-square"></i> Phone: 90488  51600</div>
+							<div class="top-bar__item"><i class="fas fa-envelope-square"></i> Email: seasakthi@kct.ac.in</div>
+						</div>
+						<div class="col-auto">
+							<ul class="header-soc list-unstyled">
+								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
+								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-behance"></i></a></li>
+								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook-f"></i></a></li>
+								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-instagram"></i></a></li>
+								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto">
+							<a class="navbar-brand navbar-brand_light scroll" href="index.html"> <img class="normal-logo img-fluid" src="assets/img/logo-light.png" alt="logo"> </a>
+							<a class="navbar-brand navbar-brand_dark scroll" href="index.html"><img class="normal-logo img-fluid" src="assets/img/logo-dark.png" alt="logo"></a>
+						</div>
+						<div class="col-auto d-xl-none">
+							<!-- Mobile Trigger Start-->
+							<button class="menu-mobile-button js-toggle-mobile-slidebar toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+							<!-- Mobile Trigger End-->
+						</div>
+						<div class="col-xl d-none d-xl-block">
+							<nav class="navbar navbar-expand-lg justify-content-end" id="nav">
+								<ul class="yamm main-menu navbar-nav">
+									<li class="nav-item active"><a class="nav-link" href="index.html">Home</a> </li>
+                                    <li class="nav-item "><a class="nav-link" href="about.html">About Us</a> </li>
+                                    
+									<!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#">Our Fleet</a>
+										<div class="dropdown-menu"> 
+                                            <a class="dropdown-item" href="listing.html">Boats Listing 1</a> 
+                                            <a class="dropdown-item" href="listing-sidebar.html">Boats Listing 2</a> 
+                                            <a class="dropdown-item" href="details.html">Boats Details</a> 
+                                        </div>
+									</li>
+                                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="tours.html">Our Tours</a>
+										<div class="dropdown-menu"> 
+                                            <a class="dropdown-item" href="tours.html">Tours Listing</a> 
+                                            <a class="dropdown-item" href="tour.html">Tour Details</a>  
+                                        </div>
+									</li>
+									<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">News</a>
+										<div class="dropdown-menu">
+                                        <a class="dropdown-item" href="blog.html">Blog main</a>
+                                        <a class="dropdown-item" href="blog-grid.html">Blog grid</a>
+                                        <a class="dropdown-item" href="post.html">Blog post</a>
+                                        </div>
+									</li> -->
+									<li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+								<!-- </ul> <span class="header-main__link btn_header_search"><i class="ic icon-magnifier"></i></span> -->
+								<!-- <button class="header-main__btn btn btn-secondary">Book Now</button> -->
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end .header-->
+        
+		<div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="920px" data-slider-arrows="false" data-slider-buttons="false">
+			<div class="sp-slides">
+				<!-- Slide 1-->
+				<div class="b-main-slider__slide b-main-slider__slide-1 sp-slide"><img class="sp-image" src="assets/img/b01.jpg" alt="slider">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="800" data-show-delay="400" data-hide-delay="400">
+									<div class="b-main-slider__title-wrap">
+										<div class="b-main-slider__slogan">Our Dream Boat</div>
+										<div class="b-main-slider__title">YALI "THE RISE"</div>
+										<!-- <div class="b-main-slider__label text-secondary">Explore Now</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide 1-->
+				<div class="b-main-slider__slide b-main-slider__slide-1 sp-slide"><img class="sp-image" src="assets/img/b02.jpg" alt="slider">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="800" data-show-delay="400" data-hide-delay="400">
+									<div class="b-main-slider__title-wrap">
+										<div class="b-main-slider__slogan">Our Dream Boats</div>
+										<div class="b-main-slider__title">Realiable Energy Boat </div>
+										<!-- <div class="b-main-slider__label text-secondary">Explore Now</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end .b-main-slider-->
+		<div class="b-about">
+			<div class="ui-decor ui-decor_down"></div>
+			<div class="container">
+								<div class="row">
+					<div class="col-lg-6 ">
+						<div class="text-left">
+							<h5 class="ui-title" style="font-size: 25px;">India’s First Hydrogen-powered with <br> custom propulsion system </h5>
+							<div class="ui-content">
+								<p>Team Sea Sakthi is excited to participate in the prestigious Monaco Energy Boat Challenge 2023 as the official team representing our institution. Our team comprises of 10 passionate students who are dedicated to developing a unique hybrid boat concept. Our boat will combine hydrogen fuel cell, batteries, and solar panels, showcasing innovative technological solutions that align with the sustainability of the marine sector. We look forward to presenting our concept to the judges and competing against some of the brightest minds in marine propulsion. Join us on our journey to the Monaco Energy Boat Challenge 2023 and support our commitment to a sustainable future!</p>
+								<ul class="arrow-list">
+									<li><i class="fas fa-long-arrow-alt-right"></i>Stunning Cruise Paths You Follow</li>
+									<li><i class="fas fa-long-arrow-alt-right"></i>Premium Boats & Yachts</li>
+									<li><i class="fas fa-long-arrow-alt-right"></i>Our Professional Approach</li>
+									<li><i class="fas fa-long-arrow-alt-right"></i>Quality Service Guaranteed</li>
+								</ul>
+								<!-- <div class="gap25"></div> <img src="assets/img/sign.jpg" alt="sign" class="sign"> <span class="sign">CEO, Autlines Boat Rentals</span>  -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6"> <img src="assets/img/2356456.png" alt="photo" class="about-image"> </div>
+				</div>
+			</div>
+		</div>
+		<!-- end .b-services-->
+		<div class="section-advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="b-advantages">
+							<div class="ic flaticon-rudder-1 text-secondary"></div>
+							<div class="b-advantages__main">
+								<div class="b-advantages__title">VISION</div>
+								<div class="decore01"></div>
+								<div class="b-advantages__info">To be an epitome of innovation and progress at the world stage by integrating zero- emissive techniques in student built sustainable electric boat.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="b-advantages">
+							<div class="ic flaticon-sailor text-secondary"></div>
+							<div class="b-advantages__main">
+								<div class="b-advantages__title">Mission</div>
+								<div class="decore01"></div>
+								<div class="b-advantages__info">To induce an astounding revolution of electric mobility in marine dynasty by incorporating concepts of cleaner technologies and churn out liveable outcomes.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="b-advantages">
+							<div class="ic flaticon-snorkel text-secondary"></div>
+							<div class="b-advantages__main">
+								<div class="b-advantages__title">Energy Engineered </div>
+								<div class="decore01"></div>
+								<div class="b-advantages__info">Mile-stone journey of budding engineers with prowess knowledge on developing a marine vehicle.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="section-goods">
+			<div class="section-default section-goods__inner bg-dark">
+				<div class="ui-decor ui-decor_mirror ui-decor_center"></div>
+				<div class="container">
+					<div class="text-center">
+						<h2 class="ui-title ui-title_light">Our Boat Has</h2>
+						<div class="row">
+							<div class="col-md-8 offset-md-2">
+								<img src="assets/img/decore03.png" alt="photo"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="section-goods__list">
+					<div class="row">
+						<div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y001.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Fuel cell</a>
+											<!-- <div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div> -->
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">2Kw
+                                                    <span class="b-goods__price-after-price">Power</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<p class="b-goods-descrip__nev">Pressure <i class="fas fa-arrows-alt-h"></i> 300 bars <br>Cylinder capacity <i class="fas fa-arrows-alt-h"></i> 13L</p>
+											<!-- <div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">Pressure  300 bars</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div> -->
+										</div>
+										<!-- <div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div> -->
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y002.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Propulsion</a>
+											<!-- <div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div> -->
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">5Kw
+                                                    <span class="b-goods__price-after-price">Power</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<p class="b-goods-descrip__nev">Torque <i class="fas fa-arrows-alt-h"></i> 25Nm <br>RPM <i class="fas fa-arrows-alt-h"></i> 2150</p>
+
+											<!-- <div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div> -->
+										</div>
+										<!-- <div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div> -->
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+									<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y003.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Chasis</a>
+											<!-- <div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div> -->
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">Carbon Fiber
+                                                    <span class="b-goods__price-after-price">Material</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<p class="b-goods-descrip__nev">Weigth <i class="fas fa-arrows-alt-h"></i> 25Kg <br>Frame<i class="fas fa-arrows-alt-h"></i> 13L</p>
+
+											<!-- <div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div> -->
+										</div>
+										<!-- <div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div> -->
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y004.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Battery</a>
+											<div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div>
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">8.4Kw
+                                                    <span class="b-goods__price-after-price">Power</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<p class="b-goods-descrip__nev">Voltage <i class="fas fa-arrows-alt-h"></i> 48V <br>Type <i class="fas fa-arrows-alt-h"></i> Lithium</p>
+
+											<!-- <div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div> -->
+										</div>
+										<!-- <div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div> -->
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y005.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Solar Panel</a>
+											<div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div>
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">$150
+                                                    <span class="b-goods__price-after-price">Per Day</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div>
+										</div>
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y006.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Motor</a>
+											<div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div>
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">$470
+                                                    <span class="b-goods__price-after-price">Per Day</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div>
+										</div>
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y007.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Fast Serenity</a>
+											<div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div>
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">$155
+                                                    <span class="b-goods__price-after-price">Per Day</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div>
+										</div>
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div> -->
+						<!-- <div class="col-xl-3 col-md-6">
+							<div class="b-goods">
+								<a class="b-goods__img" href="#"><img class="img-scale" src="assets/img/y008.jpg" alt="photo"></a>
+								<div class="b-goods__main">
+									<div class="row no-gutters">
+										<div class="col"><a class="b-goods__title" href="#">Cozmic Sunny</a>
+											<div class="b-goods__info">Stock#: 45098ES - 4 door, White, 2.5L, FWD, Automatic 6-Speed, 2.5L 5 cyls, Florida CA</div>
+										</div>
+										<div class="col-auto">
+											<div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">$230
+                                                    <span class="b-goods__price-after-price">Per Day</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="b-goods-descrip_nev_wrap">
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-user"></i> <span class="b-goods-descrip__info">12 Guests</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-bed"></i> <span class="b-goods-descrip__info">2 Master Bedroom</span> </div>
+										</div>
+										<div class="b-goods-descrip_nev">
+											<div class="b-goods-descrip__nev"> <i class="fas fa-arrows-alt-h"></i> <span class="b-goods-descrip__info"> 44 Feet</span> </div>
+											<div class="b-goods-descrip__nev"> <i class="fas fa-columns"></i> <span class="b-goods-descrip__info"> Sun Deck, Kitchen ...</span> </div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<!-- <div class="text-center mt-3"><a class="btn btn-border view-all-boats" href="listing.html">view all boats</a></div> -->
+				</div>
+			</div>
+		</section>
+		<section class="section-progress  ">
+			<div class="container">
+				<div class="dw-wrap">
+					<div class="row">
+						<div class="col-xs-12 col-md-4">
+							<div class="dw-img"><img src="assets/img/deal-weak.jpg" alt="photo"></div>
+						</div>
+						<div class="col-xs-12 col-md-8">
+							<div class="dw-info">
+								<h5 class="decore-title">Be a sponsorer for our boat!! Make it sail faster
+
+                                </h5> 
+								<h3>YALI Boat 
+									<!-- <span>Rent For $800 / HRS</span> -->
+								</h3>
+								<div class="dw-text">click Here</div>
+								<!-- <div class="dw-footer"><i class="fas fa-phone-square"></i> Booking a Charter Boat <strong>+1 755 302 8549</strong></div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Counters -->
+				<div class="row bg-counters">
+					<!-- Counter #1 -->
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="b-progress-list cr-counters bg-accent-1 bg-accent-color1">
+							<div class="cr-counters__icon"> <i class="flaticon-sailor"></i> </div>
+							<div class="cr-counters__numbers js-chart" data-percent="1"> <span>1 </span> </div>
+							<div class="cr-counters__description">indian Team</div>
+						</div>
+					</div>
+					<!-- Counter #2 -->
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="cr-counters bg-accent-2 bg-accent-color2 ">
+							<div class="cr-counters__icon"> <i class="flaticon-snorkel"></i> </div>
+							<div class="cr-counters__numbers js-chart" data-percent="10"> <span class="js-percent"></span> <span>+</span></div>
+							<div class="cr-counters__description">Countries all over the world</div>
+						</div>
+					</div>
+					<!-- Counter #3 -->
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="cr-counters bg-accent-1 bg-accent-color3">
+							<div class="cr-counters__icon"> <i class="flaticon-island-1"></i> </div>
+							<div class="cr-counters__numbers js-chart" data-percent="17"> <span class="js-percent"></span> <span>+</span></div>
+							<div class="cr-counters__description">Energy Class Teams</div>
+						</div>
+					</div>
+					<!-- Counter #4 -->
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="cr-counters  bg-accent-color4">
+							<div class="cr-counters__icon"> <i class="flaticon-chef-hat"></i> </div>
+							<div class="cr-counters__numbers js-chart" data-percent="32"> <span class="js-percent"></span> <span>+</span></div>
+							<div class="cr-counters__description">Teams over all</div>
+						</div>
+						<br>
+						<br>
+					</div>
+				</div>
+				<!-- End of Counters -->
+			</div>
+		</section>
+		<section class="section-video section-default section-goods__inner bg-dark ">
+            
+            <div class="ui-decor ui-decor_mirror ui-decor_center"></div>
+            
+            
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-10 col-lg-10">
+						<div class="video-info">
+							<p><img src="assets/img/decore02.png" alt="decore">Here is our Catamaran(YALI 2.0) video</p>
+							<h4>We’ve Exclusive placed this for your views</h4>
+							<h5>Watch our works</h5>
+							<ul>
+								<li><i class="fas fa-phone-square"></i> Call Us Today: +91 90488  51600</li>
+								<li><i class="fas fa-envelope-square"></i> Email: <a href="mailto:seasakthi@kct.ac.in">seasakthi@kct.ac.in</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-2 col-lg-2"> 
+                        <a class="video-btn venobox ternary-video-btn-style vbox-item popup-youtube" data-vbtype="video" data-autoplay="true" href="https://www.youtube.com/embed/gbCnMxCsscg?controls=0"><i class="fa fa-play"></i>
+                            <div class="pulsing-bg"></div>
+                               <span>Play</span> 
+                        </a> 
+                
+                    
+                    </div>
+				</div>
+			</div>
+		</section>
+		<section class="section-gallery">
+			<div class="container">
+				<div class="text-center">
+					<h2 class="ui-title">Gallery</h2>
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<p></p> <img src="assets/img/decore03.png" alt="photo"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-gallery js-zoom-gallery">
+				<div class="row no-gutters">
+					<div class="col-lg-3 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal001.jpg"><img class="img-scale" src="assets/img/gal001.jpg" alt="photo"></a>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal003.jpg"><img class="img-scale" src="assets/img/gal003.jpg" alt="photo"></a>
+					</div>
+					<div class="col-lg-2 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal009.jpg"><img class="img-scale" src="assets/img/gal009.jpg" alt="photo"></a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal005.jpg"><img class="img-scale" src="assets/img/gal005.jpg" alt="photo"></a>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-lg-5 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal006.jpg"><img class="img-scale" src="assets/img/gal006.jpg" alt="photo"></a>
+					</div>
+					<div class="col-lg-2 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal008.jpg"><img class="img-scale" src="assets/img/gal008.jpg" alt="photo"></a>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal007.jpg"><img class="img-scale" src="assets/img/gal007.jpg" alt="photo"></a>
+					</div>
+					<div class="col-lg-2 col-sm-6">
+						<a class="ui-gallery__img js-zoom-gallery__item" href="assets/img/_gal004.jpg"><img class="img-scale" src="assets/img/gal004.jpg" alt="photo"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+						<div class="text-left title-padding-m-top">
+							<h2 class="ui-title">FAQ’s</h2>
+							 <img src="assets/img/decore03.png" alt="photo"> </div>
+                        
+                           <div class="ui-accordion accordion" id="accordion-1">
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h3 class="mb-0">
+                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span class="ui-accordion__number">01</span>Why have we decided to participate?<i class="ic fas fa-chevron-down"></i></button>
+                      </h3>
+                    </div>
+                    <div class="collapse show" id="collapse1" data-aria-labelledby="heading1" data-parent="#accordion-1">
+                  <div class="card">
+                      <div class="card-body">As a team, we are committed to promoting sustainable marine solutions and pushing the boundaries of technology in the maritime sector. Participating this event allows us to build on our experience and knowledge, refine our designs, and showcase our latest innovations including indigenous propulsion system and hydrogen fuel cell in the Monaco Energy Boat Challenge.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h3 class="mb-0">
+                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><span class="ui-accordion__number">02</span>When is the competition?<i class="ic fas fa-chevron-down"></i></button>
+                      </h3>
+                    </div>
+                    <div class="collapse" id="collapse2" data-aria-labelledby="heading2" data-parent="#accordion-1">
+                      <div class="card-body">Monaco Energy Boat Challenge 2023 happens from 3rd July to 9th July 2023.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading3">
+                      <h3 class="mb-0">
+                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><span class="ui-accordion__number">03</span>What are the different categories in this challenge?<i class="ic fas fa-chevron-down"></i></button>
+                      </h3>
+                    </div>
+                    <div class="collapse" id="collapse3" data-aria-labelledby="heading3" data-parent="#accordion-1">
+                      <div class="card-bodyFood">There are three classes: <br>&nbsp;&nbsp;Energy class,<br> &nbsp;&nbsp;Solar class,<br> &nbsp;&nbsp;Open Sea class.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading4">
+                      <h3 class="mb-0">
+                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"><span class="ui-accordion__number">04</span>How was your MEBC 2022 participation?<i class="ic fas fa-chevron-down"></i></button>
+                      </h3>
+                    </div>
+                    <div class="collapse" id="collapse4" data-aria-labelledby="heading4" data-parent="#accordion-1">
+                      <div class="card-body">We, Team Sea Sakthi, are proud to announce that we secured the 6th global position and won the communication prize of 2000 euros at the Monaco Energy Boat Challenge.</div>
+                    </div>
+                  </div>
+                               
+                </div>
+                <!-- end .accordion-->
+
+                        
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-reviews area-bg area-bg_dark area-bg_op_90">
+			<div class="area-bg__inner section-default">
+				<div class="container text-center">
+					<div class="text-center">
+						<h2 class="ui-title ui-title_light">News Update</h2>
+						<div class="row">
+							<div class="col-md-8 offset-md-2"> <img src="assets/img/decore03.png" alt="photo"> </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="b-reviews-slider js-slider" data-slick="{&quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1, &quot;autoplay&quot;: true, &quot;dots&quot;: false, &quot;arrows&quot;: false}">
+								<blockquote class="b-reviews">
+									<div class="b-seller__img"><img class="img-scale" src="assets/img/avatar.jpg" alt="foto"></div>
+									<div class="b-reviews__text">Exercit ullamco laboris nisiut aliquip ex ea com irure dolor reprehs tempor incididunt ut labore dolore magna aliqua quis nostrud sed exercitation ullamco laboris nisiut duis aute irure sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+									<div class="b-reviews__footer">
+										<div class="b-reviews__name">Donald James</div>
+										<div class="b-reviews__category">Customer</div>
+									</div>
+								</blockquote>
+								<!-- end .b-reviews-->
+								<blockquote class="b-reviews">
+									<div class="b-seller__img"><img class="img-scale" src="assets/img/avatar.jpg" alt="foto"></div>
+									<div class="b-reviews__text">Exercit ullamco laboris nisiut aliquip ex ea com irure dolor reprehs tempor incididunt ut labore dolore magna aliqua quis nostrud sed exercitation ullamco laboris nisiut duis aute irure sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+									<div class="b-reviews__footer">
+										<div class="b-reviews__name">Donald James</div>
+										<div class="b-reviews__category">Customer</div>
+									</div>
+								</blockquote>
+								<!-- end .b-reviews-->
+								<blockquote class="b-reviews">
+									<div class="b-seller__img"><img class="img-scale" src="assets/img/avatar.jpg" alt="foto"></div>
+									<div class="b-reviews__text">Exercit ullamco laboris nisiut aliquip ex ea com irure dolor reprehs tempor incididunt ut labore dolore magna aliqua quis nostrud sed exercitation ullamco laboris nisiut duis aute irure sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+									<div class="b-reviews__footer">
+										<div class="b-reviews__name">Donald James</div>
+										<div class="b-reviews__category">Customer</div>
+									</div>
+								</blockquote>
+								<!-- end .b-reviews-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="section-article section-default">
+			<div class="container">
+				<div class="text-center">
+					<h2 class="ui-title">News Update</h2>
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<p>Dolore magna aliqua enim ad minim veniam, quis nostrud exercitation aliquip duis aute irure dolorin <br> reprehenderits vol dolore fugiat nulla pariatur excepteur sint occaecat cupidatat.</p> <img src="assets/img/decore04.png" alt="photo"> </div>
+					</div>
+				</div>
+				<div class="pt-2 row">
+					<div class="col-xl-4 col-md-4">
+						<section class="b-post b-post-3">
+							<div class="entry-media">
+								<a href="post.html"><img class="img-scale" src="assets/img/sailing-on-vacation-EUT5FWG.jpg" alt="photo"></a>
+							</div>
+							<div class="entry-meta">
+								<time class="entry-meta__item" datetime="2019-01-31">June 15, 2020</time> <span class="entry-meta__item">
+                                    by
+                                    <a class="entry-meta__link text-primary" href="blog.html">Yali</a></span> </div>
+							<div class="entry-main">
+								<div class="entry-header">
+									<h2 class="entry-title"><a href="post.html">Corporate yacht for smooth
+running of main events</a></h2> </div>
+								<div class="entry-content">Aiusmod tempor incididunt labore dolore magna ust enim sed veniams quis nostrud</div>
+							</div> <a class="btn-post" href="post.html">Read More</a> </section>
+					</div>
+					<div class="col-xl-4 col-md-4">
+						<section class="b-post b-post-3">
+							<div class="entry-media">
+								<a href="post.html"><img class="img-scale" src="assets/img/326576456534.jpg" alt="photo"></a>
+							</div>
+							<div class="entry-meta">
+								<time class="entry-meta__item" datetime="2019-01-31">June 12, 2020</time> <span class="entry-meta__item">
+                                    by
+                                    <a class="entry-meta__link text-primary" href="blog.html">YALI</a></span> </div>
+							<div class="entry-main">
+								<div class="entry-header">
+									<h2 class="entry-title"><a href="post.html">The Best staff members for
+your service available</a></h2> </div>
+								<div class="entry-content">Aiusmod tempor incididunt labore dolore magna ust enim sed veniams quis nostrud</div>
+							</div> <a class="btn-post" href="post.html">Read More</a> </section>
+					</div>
+					<div class="col-xl-4 col-md-4">
+						<section class="b-post b-post-3">
+							<div class="entry-media">
+								<a href="post.html"><img class="img-scale" src="assets/img/sailing-on-vacation-EUT5FWG34.jpg" alt="photo"></a>
+							</div>
+							<div class="entry-meta">
+								<time class="entry-meta__item" datetime="2019-01-31">June 3, 2020</time> <span class="entry-meta__item">
+                                    by
+                                    <a class="entry-meta__link text-primary" href="blog.html">YALI</a></span> </div>
+							<div class="entry-main">
+								<div class="entry-header">
+									<h2 class="entry-title"><a href="post.html">Don’t worry about comfort
+                                            and company facilities</a></h2> </div>
+								<div class="entry-content">Aiusmod tempor incididunt labore dolore magna ust enim sed veniams quis nostrud</div>
+							</div> <a class="btn-post" href="post.html">Read More</a> </section>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<section class="section-default section-banners">
+			<div class="container">
+				<div class="text-center"> <img src="assets/img/banners.jpg" alt="photo"> </div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-section">
+							<a class="footer__logo" href="index.html"><img class="img-fluid" src="assets/img/logo-light.png" alt="Logo"></a>
+							<div class="footer-info">TEAM SEA SAKTHI is a team of hand picked students from Kumaraguru Institutions who are masterminds in their own domains of expertise. The team has set it's sights upon conquering MEBC 2023 with a kind of domination which is unheard of.</div>
+						</div>
+						<!-- <section class="footer-section">
+							<h3 class="footer-section__title footer-section__title_sm">Subscribe Newsletter</h3>
+							<form class="footer-form">
+								<div class="form-group">
+									<input class="footer-form__input form-control" type="email" placeholder="your email"><i class="ic far fa-envelope-open"></i> </div>
+							</form>
+						</section> -->
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<!-- <section class="footer-section footer-section_link pl-5">
+							<h3 class="footer-section__title">Boat Services</h3>
+							<ul class="footer-list list-unstyled">
+								<li><a href="#">Wedding Facility</a></li>
+								<li><a href="#">Cruise and Marina</a></li>
+								<li><a href="#">Yacht Party Event</a></li>
+								<li><a href="#">Corporate Event</a></li>
+								<li><a href="#">Fishing Cruiser</a></li>
+								<li><a href="#">Overnight Stay</a></li>
+								<li><a href="#">Birthday Party Yacht</a></li>
+								<li><a href="#">Boar Rentals</a></li>
+							</ul>
+						</section> -->
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="footer-section footer-section_link footer-section_link_about">
+							<h3 class="footer-section__title">About Yali</h3>
+							<ul class="footer-list list-unstyled">
+								<li><a href="#"> Home</a></li>
+								<!-- <li><a href="#">Services</a></li> -->
+								<li><a href="#">About us</a></li>
+								<!-- <li><a href="#">Boat Fleet</a></li> -->
+								<!-- <li><a href="#">Parts Shop </a></li> -->
+								<li><a href="#">Contact us</a></li>
+								<!-- <li><a href="#">Buy or Sell Boats</a></li>
+								<li><a href="#">Featured Vehicles</a></li> -->
+							</ul>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="footer-section">
+							<h3 class="footer-section__title">Get In Touch</h3>
+							<div class="footer-contacts">
+								<div class="footer-contacts__item"><i class="ic icon-location-pin"></i>KCT Garage,<br>Kumraguru College of Technology,<br>Coimbatore,<br>Tamilnadu, India. 🏁 🇮🇳 🇮🇳</div>
+								<div class="footer-contacts__item"><i class="ic icon-envelope"></i><a href="mailto:seasakthi@kct.ac.in">seasakthi@kct.ac.in</a></div>
+								<div class="footer-contacts__item"><i class="ic icon-earphones-alt"></i> Phone: <a class="footer-contacts__phone" href="tel:+919048851600">+91 90488 51600</a> </div>
+							</div>
+							<ul class="footer-soc list-unstyled">
+								<li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
+								<li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-behance"></i></a></li>
+								<li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook-f"></i></a></li>
+								<li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-instagram"></i></a></li>
+								<li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-youtube"></i></a></li>
+							<!-- </ul><a class="btn btn-white" href="#">confirm booking</a> </section> -->
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">© 2023 - YALI. All rights reserved.  Made with ❤️ iQube.</div>
+			</div>
+		</footer>
+		<!-- .footer-->
+	</div>
+	<!-- end layout-theme-->
+	<!-- ++++++++++++-->
+	<!-- MAIN SCRIPTS-->
+	<!-- ++++++++++++-->
+	<script src="assets/libs/jquery-3.3.1.min.js"></script>
+	<script src="assets/libs/jquery-migrate-1.4.1.min.js"></script>
+	<!-- Bootstrap-->
+	<script src="assets/plugins/popever/popper.min.js"></script>
+	<script src="assets/libs/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+	<!---->
+	<!-- Color scheme-->
+	<script src="assets/plugins/switcher/js/dmss.js"></script>
+	<!-- Select customization & Color scheme-->
+	<script src="assets/libs/bootstrap-select.min.js"></script>
+	<!-- Pop-up window-->
+	<script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- Headers scripts-->
+	<script src="assets/plugins/headers/slidebar.js"></script>
+	<script src="assets/plugins/headers/header.js"></script>
+	<!-- Mail scripts-->
+	<script src="assets/plugins/jqBootstrapValidation.js"></script>
+	<script src="assets/plugins/contact_me.js"></script>
+	<!-- Progress numbers-->
+	<script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="assets/plugins/rendro-easy-pie-chart/jquery.waypoints.min.js"></script>
+	<!-- Animations-->
+	<script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
+	<!-- Scale images-->
+	<script src="assets/plugins/ofi.min.js"></script>
+	<!-- Main slider-->
+	<script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+	<!-- Sliders-->
+	<script src="assets/plugins/slick/slick.js"></script>
+	<!-- Slider number-->
+	<script src="assets/plugins/noUiSlider/wNumb.js"></script>
+	<script src="assets/plugins/noUiSlider/nouislider.min.js"></script>
+	<!-- User customization-->
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>
