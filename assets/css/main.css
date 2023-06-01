@@ -4502,7 +4502,12 @@ html .b-goods-slider .slick-list {
     margin-bottom: 35px;
     padding-bottom: 0;
 }
-
+@media (min-width: 600px) {
+    .b-team{
+        width: 250px;
+        display: inline-block;
+    }
+}
 
 
 .b-team__media img {
