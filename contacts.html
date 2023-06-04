@@ -2,11 +2,12 @@
 <html lang="zxx">
 <!-- Copied from https://pro-theme.com/html/nevica/contacts.html by Cyotek WebCopy 1.8.0.652, 04/04/2023, 8.44.11 AM -->
   <head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>Nevica / Blog</title>
-      <meta content="" name="description">
-      <meta content="" name="keywords">
+      <title>Contact us |Yali 2.0 </title>
+      <meta content="Yali" name="description">
+      <meta content="Yali" name="keywords">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta content="telephone=no" name="format-detection">
       <meta name="HandheldFriendly" content="true">
@@ -15,6 +16,17 @@
       <link rel="icon" type="image/x-icon" href="favicon.ico"><!--[if lt IE 9 ]>
 <script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
 <![endif]-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-793BE8H5CR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-793BE8H5CR');
+</script>
+
+
   </head>
   <body class="page">
       <!-- Loader-->
@@ -68,16 +80,16 @@
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
 						<div class="col-auto">
-							<div class="top-bar__item"><i class="fas fa-phone-square"></i> Phone: 755 302 8549 </div>
-							<div class="top-bar__item"><i class="fas fa-envelope-square"></i> Email: support@example.com</div>
+							<div class="top-bar__item"><i class="fas fa-phone-square"></i> Phone: 90488  51600</div>
+							<div class="top-bar__item"><i class="fas fa-envelope-square"></i> Email: seasakthi@kct.ac.in</div>
 						</div>
 						<div class="col-auto">
 							<ul class="header-soc list-unstyled">
-								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
-								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-behance"></i></a></li>
-								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook-f"></i></a></li>
-								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-instagram"></i></a></li>
-								<li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-youtube"></i></a></li>
+								  <li class="footer-soc__item"><a class="footer-soc__link" href="https://twitter.com/TeamSeaSakthi" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
+                  <li class="footer-soc__item"><a class="footer-soc__link" href="https://www.linkedin.com/in/team-sea-sakthi-kct-564bbb22a" target="_blank"><i class="ic fab fa-linkedin"></i></a></li>
+                  <!-- <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook-f"></i></a></li> -->
+                  <li class="footer-soc__item"><a class="footer-soc__link" href="https://www.instagram.com/teamseasakthi/" target="_blank"><i class="ic fab fa-instagram"></i></a></li>
+                  <li class="footer-soc__item"><a class="footer-soc__link" href="https://www.youtube.com/@KumaraguruCollegeofTechnology/about" target="_blank"><i class="ic fab fa-youtube"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -178,9 +190,51 @@
                     <div class="form-group">
                       <textarea class="form-control" id="user-message" rows="5" placeholder="Message" required="required"></textarea>
                     </div>
-                    <button class="btn btn-primary">Send Message</button>
+                    <button type="submit"  id="submit_btn" class="btn btn-primary">Send Message</button>
                   </form>
                 </section>
+                <script>
+                  const scriptURL = "https://script.google.com/macros/s/AKfycbzol3dL_4PUXJUrLUs00syeUW7e90ppE_1791rdY06gu1uDmm-4nlRYDg/exec"
+                              window.addEventListener('DOMContentLoaded', () => {
+                                  $("#google_sheet_form").submit(function (e) {
+                                      e.preventDefault()
+                                      var number_of_checked_checkbox = 0;
+                      
+                                      if ((number_of_checked_checkbox == 0) ) {
+                                          const form = document.getElementById("google_sheet_form")
+                                          const buttonText = e.target.textContent;
+                                          const button_element = document.getElementById("submit_btn")
+                                          button_element.disabled = true
+                                          button_element.textContent = "Submitting..."
+                                          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                                              .then(response => {
+                                                  button_element.classList.remove('btn-primary')
+                                                  button_element.classList.add('btn-success')
+                                                  button_element.textContent = "Done!"
+                                                  if (response.status == 200) {
+                                                      console.log('Success!', response)
+                                                      swal("Good job!", "Your response has been recorded!", "success").then(val=>{
+                                                          form.reset()
+                                                          button_element.disabled=false
+                                                          button_element.textContent="Submit"
+                                                      })
+                                                  }
+                                              })
+                                              .catch(error => {
+                                                  console.error('Error!', error.message)
+                                                  button_element.classList.remove('btn-primary')
+                                                  button_element.classList.add('btn-danger')
+                                                  button_element.textContent = "Sorry"
+                                                  swal('oh noes!', 'Error submitting data.Please try again later.', 'error')
+                                              })
+      
+                                      }
+      
+                                  });
+                              });
+      
+      
+                </script>
                 <!-- end .b-form-contact-->
               </div>
             </div>
@@ -244,7 +298,7 @@
                 <div class="footer-contacts">
                   <div class="footer-contacts__item"><i class="ic icon-location-pin"></i>KCT Garage,<br>Kumraguru College of Technology,<br>Coimbatore,<br>Tamilnadu, India. 🏁 🇮🇳 🇮🇳</div>
                   <div class="footer-contacts__item"><i class="ic icon-envelope"></i><a href="mailto:yali@kct.ac.in">yali@kct.ac.in</a></div>
-                  <div class="footer-contacts__item"><i class="ic icon-earphones-alt"></i> Phone: <a class="footer-contacts__phone" href="tel:+17553028549">+1 755 302 8549</a> </div>
+                  <div class="footer-contacts__item"><i class="ic icon-earphones-alt"></i> Phone: <a class="footer-contacts__phone" href="tel:+9190488 51600">+91 90488 51600</a> </div>
                 </div>
                 <ul class="footer-soc list-unstyled">
                   <li class="footer-soc__item"><a class="footer-soc__link" href="https://twitter.com/TeamSeaSakthi" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
